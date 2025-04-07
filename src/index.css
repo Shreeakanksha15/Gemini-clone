@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Universal Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Ensure full height of html and body */
+html, body {
+  height: 100%; /* Make html and body stretch to the full viewport height */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  background-color: var(--background-color); /* Apply background theme globally */
+  color: var(--text-color); /* Apply text theme globally */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth theme transition */
+}
+
+/* Ensure root div covers the viewport */
+#root {
+  min-height: 100vh; /* Ensure the React root element covers the viewport */
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  background-color: inherit; /* Inherit the background theme */
+  color: inherit; /* Inherit the text theme */
+}
+
+/* Theme Variables */
+:root {
+  --primary-color: #3b82f6; /* Default Primary */
+  --secondary-color: #9333ea; /* Default Secondary */
+  --background-color: #ffffff; /* Default Background */
+  --text-color: #000000; /* Default Text Color */
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --primary-color: #1d4ed8;
+  --secondary-color: #7e22ce;
+  --background-color: #0f172a;
+  --text-color: #ffffff;
+}
+
+/* Solarized Theme */
+[data-theme="solarized"] {
+  --primary-color: #b58900;
+  --secondary-color: #268bd2;
+  --background-color: #fdf6e3;
+  --text-color: #586e75;
+}
+
+/* Oceanic Theme */
+[data-theme="oceanic"] {
+  --primary-color: #0277bd;
+  --secondary-color: #00bcd4;
+  --background-color: #e0f7fa;
+  --text-color: #004d40;
+}
+
+/* Forest Theme */
+[data-theme="forest"] {
+  --primary-color: #388e3c;
+  --secondary-color: #2e7d32;
+  --background-color: #e8f5e9;
+  --text-color: #1b5e20;
+}
+
+/* Sunset Theme */
+[data-theme="sunset"] {
+  --primary-color: #ff7043;
+  --secondary-color: #ffb74d;
+  --background-color: #fff3e0;
+  --text-color: #e65100;
+}

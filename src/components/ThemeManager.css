@@ -1,0 +1,42 @@
+:root {
+    --primary-color: #3b82f6; /* Default */
+    --secondary-color: #9333ea;
+    --background-color: #ffffff;
+    --text-color: #000000;
+  }
+  
+  [data-theme="dark"] {
+    --primary-color: #1d4ed8;
+    --secondary-color: #7e22ce;
+    --background-color: #0f172a;
+    --text-color: #ffffff;
+  }
+  
+  [data-theme="solarized"] {
+    --primary-color: #b58900;
+    --secondary-color: #268bd2;
+    --background-color: #fdf6e3;
+    --text-color: #586e75;
+  }
+  
+  [data-theme="oceanic"] {
+    --primary-color: #0277bd;
+    --secondary-color: #00bcd4;
+    --background-color: #e0f7fa;
+    --text-color: #004d40;
+  }
+  
+  [data-theme="forest"] {
+    --primary-color: #388e3c;
+    --secondary-color: #2e7d32;
+    --background-color: #e8f5e9;
+    --text-color: #1b5e20;
+  }
+  
+  [data-theme="sunset"] {
+    --primary-color: #ff7043;
+    --secondary-color: #ffb74d;
+    --background-color: #fff3e0;
+    --text-color: #e65100;
+  }
+  
